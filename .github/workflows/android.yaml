@@ -3,17 +3,18 @@
 name: Android
 
 on:
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
+  # pull_request:
+  #   branches:
+  #     - master
+  # push:
+  #   branches:
+  #     - master
+  workflow_dispatch
   
 jobs:
 
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
   
     steps:
     - name: Checkout code
